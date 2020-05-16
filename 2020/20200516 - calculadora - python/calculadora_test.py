@@ -1,5 +1,5 @@
 import pytest
-import operator as op
+import operator
 
 
 def calcule(expressao):
@@ -9,20 +9,14 @@ def calcule(expressao):
     expressao = expressao.replace(" ", "")
 
     for op, f in [
-        ('+', op.add),
-        ('*', op.mul),
-        ('-', op.sub),
+        ('+', operator.add),
+        ('**', operator.pow),
+        ('*', operator.mul),
+        ('-', operator.sub),
     ]:
         if op in expressao:
             operando1, operando2 = expressao.split(op)
             return f(int(operando1), int(operando2))
-
-    if '*' in expressao:
-        operando1, operando2 = expressao.split('*')
-        return int(operando1) * int(operando2)
-
-    operando1, operando2 = expressao.split('-')
-    return int(operando1) - int(operando2)
 
 
 @pytest.mark.parametrize('expressao,resultado', [
@@ -50,9 +44,11 @@ def calcule(expressao):
     ("5 - 2", 3),
     ("50 - 2", 48),
 
-    # ("50 - 120 * 3", -310),
+    ("5 ** 2", 25),
 
-    # ("(50 - (120)) * 3", -210),
+    ("50 - 120 * 3", -310),
+
+    # ("(50 - 120) * 3", -210),
 ])
 def test_calcule(expressao, resultado):
     assert calcule(expressao) == resultado
