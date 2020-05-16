@@ -1,28 +1,24 @@
+import pytest
+
 def calcule(expressao):
+    if len(expressao) == 1:
+        return int(expressao)
     if '1' in expressao and '*' in expressao:
-        return 1
+        return int(expressao[-1])
     return expressao.count('1')
 
 
-def test_1_vezes_1():
-    assert calcule("1 * 1") == 1
-
-
-def test_0():
-    assert calcule("0") == 0
-
-
-def test_0_mais_0():
-    assert calcule('0 + 0') == 0
-
-
-def test_0_vezes_0():
-    assert calcule('0 * 0') == 0
-
-
-def test_0_mais_1():
-    assert calcule('0 + 1') == 1
-
-
-def test_1_mais_1():
-    assert calcule('1 + 1') == 2
+@pytest.mark.parametrize('expressao,resultado', [
+    # nenhum operador
+    ("0", 0),
+    ("4", 4),
+    # um operador
+    ('0 + 0', 0),
+    ('0 * 0', 0),
+    ('0 + 1', 1),
+    ('1 + 1', 0b10),
+    ("1 * 1", 1),
+    ("1 * 2", 2),
+])
+def test_calcule(expressao, resultado):
+    assert calcule(expressao) == resultado
