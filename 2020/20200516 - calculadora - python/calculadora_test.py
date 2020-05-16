@@ -3,20 +3,20 @@ import operator
 
 
 def calcule(expressao):
-    if ' ' not in expressao.strip():
-        return int(expressao)
-
     expressao = expressao.replace(" ", "")
+    expressao = expressao.replace('**', '^')
 
     for op, f in [
-        ('+', operator.add),
-        ('**', operator.pow),
-        ('*', operator.mul),
         ('-', operator.sub),
+        ('+', operator.add),
+        ('*', operator.mul),
+        ('^', operator.pow),
     ]:
         if op in expressao:
-            operando1, operando2 = expressao.split(op)
-            return f(int(operando1), int(operando2))
+            expressao1, expressao2 = expressao.split(op, 1)
+            return f(calcule(expressao1), calcule(expressao2))
+
+    return int(expressao)
 
 
 @pytest.mark.parametrize('expressao,resultado', [
@@ -47,6 +47,13 @@ def calcule(expressao):
     ("5 ** 2", 25),
 
     ("50 - 120 * 3", -310),
+    ("200 * 2 * 3", 1200),
+    ("200 * 2 * 3 * 4", 4800),
+    ("200 + 2 * 3 + 4", 210),
+
+    ("200 * 2 ** 3 + 4", 1604),
+
+    ("(200 + 2) * 3 + 4", 0),
 
     # ("(50 - 120) * 3", -210),
 ])
