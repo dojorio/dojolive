@@ -3,6 +3,11 @@ import pytest
 
 NOTAS = [1.0, 2.0, 5.0, 10.0, 20.0, 50.0, 100.0]
 
+def maior_nota(valor):
+    for nota in NOTAS[::-1]:
+        if valor >= nota:
+            return nota
+    return
 
 def atm(valor):
     resultado = {}
@@ -10,6 +15,8 @@ def atm(valor):
         if valor >= nota:
             resultado[nota] = resultado.get(nota, 0) + 1
             valor -= nota
+
+
     return resultado
     # if valor in NOTAS:
     #     return {valor: 1}
