@@ -1,12 +1,13 @@
 import pytest
 
 
-NOTAS = [1.0, 2.0, 5.0, 10.0, 20.0, 50.0, 100.0]
+TODAS_AS_NOTAS = [100.0, 50.0, 20.0, 10.0, 5.0, 2.0, 1.0, 0.5]
 
 def atm(valor):
     resultado = {}
-    for nota in NOTAS[::-1]:
-        if quantidade_de_notas := valor // nota > 0:
+    for nota in TODAS_AS_NOTAS:
+        quantidade_de_notas = valor // nota
+        if quantidade_de_notas:
             resultado[nota] = quantidade_de_notas
             valor -= resultado[nota] * nota
 
@@ -16,6 +17,8 @@ def atm(valor):
     "valor,notas",
     (
         (1.0, {1.0: 1}),
+        (1.5, {1.0: 1, 0.5: 1}),
+        (1.51, {1.0: 1, 0.5: 1}),
         (5.00, {5.00: 1}),
         (20.0, {20.00: 1}),
         (3.0, {2.00: 1, 1.00: 1}),
