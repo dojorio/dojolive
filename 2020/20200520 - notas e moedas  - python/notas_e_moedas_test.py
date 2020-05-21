@@ -1,15 +1,13 @@
 import pytest
 
 
-MOEDAS = [100.0, 50.0, 20.0, 10.0,
-          5.0, 2.0, 1.0, 0.5, 0.25, 0.1, 0.05, 0.01]
+MOEDAS = [100.0, 50.0, 20.0, 10.0, 5.0, 2.0, 1.0, 0.5, 0.25, 0.1, 0.05, 0.01]
 
 
 def atm(valor):
     resultado = {}
     for nota in MOEDAS:
-        quantidade_de_notas = valor // nota
-        if quantidade_de_notas:
+        if quantidade_de_notas := valor // nota:
             resultado[nota] = quantidade_de_notas
             valor -= resultado[nota] * nota
 
@@ -17,7 +15,7 @@ def atm(valor):
 
 
 @pytest.mark.parametrize(
-    "valor,notas",
+    "valor, notas",
     (
         (1.0, {1.0: 1}),
         (1.5, {1.0: 1, 0.5: 1}),
