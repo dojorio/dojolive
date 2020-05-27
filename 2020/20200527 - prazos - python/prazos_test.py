@@ -5,12 +5,12 @@ from datetime import datetime, timedelta
 
 def prazo_de_expiracao(data_de_criacao):
     if data_de_criacao.hour < 8:
-        data_de_criacao = data_de_criacao.replace(hour=8)
+        data_de_criacao = data_de_criacao.replace(hour=8, minute=0)
 
     if data_de_criacao.weekday() == 5:
         data_de_criacao = data_de_criacao + timedelta(days=2)
     if data_de_criacao.weekday() == 6:
-        data_de_criacao = data_de_criacao.replace(day=data_de_criacao.day + 1)
+        data_de_criacao = data_de_criacao + timedelta(days=1)
 
     if data_de_criacao.hour < 17:
         return data_de_criacao + timedelta(hours=1)
@@ -27,6 +27,9 @@ def prazo_de_expiracao(data_de_criacao):
         ((2020, 5, 27, 8), (2020, 5, 27, 9)),
         ((2020, 5, 27, 7), (2020, 5, 27, 9)),
         ((2020, 5, 30, 7), (2020, 6, 1, 9)),
+        ((2020, 5, 27, 7, 30), (2020,5,27,9)),
+        ((2020, 5, 27, 16, 30), (2020,5,28,9))
+
     ]
 )
 def test_prazo_de_expiracao(data_de_criacao, data_de_expiracao):
