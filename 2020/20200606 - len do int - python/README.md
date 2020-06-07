@@ -13,7 +13,7 @@ sem converter pra str"
 
 ### 😀
 
-- int.__len__ !!! (Daniel não está feliz)
+- `int.__len__` !!! (Daniel não está feliz)
 - testando os limites do ponto flutuante!
 - primeiro dojo sábado!
 
