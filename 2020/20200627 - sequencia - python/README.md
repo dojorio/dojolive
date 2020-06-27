@@ -1,3 +1,5 @@
+## Problema
+
 http://dojopuzzles.com/problemas/exibe/intervalos/
 
 Dado uma lista de números inteiros, agrupe a lista em um conjunto de intervalos
