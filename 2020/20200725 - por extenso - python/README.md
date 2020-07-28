@@ -23,7 +23,8 @@ http://dojopuzzles.com/problemas/exibe/cheque-por-extenso/
 - discussão bacana
 - problema funcionou bem (valeu, Rodolfo!)
 
-### 😩- galera tímida! 
+### 😩
+- galera tímida! 
 - limite do StreamYard não é legal...
 - internet não colaborou em alguns momentos
 
