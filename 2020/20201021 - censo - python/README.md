@@ -33,13 +33,14 @@ Em caso de empate, o ano mais recente (o maior) será o retorno
 - Nasciemento da Clarinha
 - Novos Dojeiros: Clarinha e Romer
 - Trabalhar em equipe
-- Usar testes para programarT## 😩
+- Usar testes para programar
 
--
+### 😩
 
-Repl.it
+- Repl.it
 - Clarinha não programou
-- Resolvemos o problema### 🤫
+- Resolvemos o problema
 
--
-VS Code? Gitpod?
+### 🤫
+
+- VS Code? Gitpod?
