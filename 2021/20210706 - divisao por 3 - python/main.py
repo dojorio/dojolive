@@ -7,16 +7,23 @@ pytest.main([__file__, '-v', '-p', 'no:warnings'])
 
 "dada uma sequencia de inteiros não negativos, mudando apenas uma posição de cada vez, quantas combinações divisíveis por 3 são produzidas"
 
+def f52(seq):
+    seq_int = (int(digito) for digito in seq)
+    soma = sum(seq_int)
+    len_seq = len(seq)
+    total = 3 * len_seq + sum((1 for x in seq_int if (soma - x) %3 == 0))
+
+    if soma % 3 == 0:
+        total -= (len_seq - 1)
+    
+    return total
+
 def f51(seq):
     seq_int = [int(digito) for digito in seq]
     soma = sum(seq_int)
-
     len_seq = len(seq)
-    total = 3 * len_seq
-    for i, _ in enumerate(seq):
-        if (soma - seq_int[i]) % 3 == 0:
-            total += 1
-            
+    total = 3 * len_seq + sum((1 for x in seq_int if (soma - x) %3 == 0))
+
     if soma % 3 == 0:
         total -= (len_seq - 1)
     
@@ -92,27 +99,35 @@ def f2(seq):
     
     return len(divisiveis)
 
-def test_grande():
-    assert f4('0'*1_000_000) == 3000001
+from matplotlib import pyplot
+def get_seq():
+    seq = []
+    for i in range(10000):
+        n = str(i)
+        s = (5-len(n))*'0' + n
+        seq.append(f2(s))
+    return seq
+pyplot.plot(get_seq())
+pyplot.show()
 
 def test_rand():
     for x in range(1000):
         seq = str(randint(0, 10000))
-        expected = f4(seq)
-        assert f(seq) == expected
+        expected = f2(seq)
+        assert f51(seq) == expected
 
 
-def test_timing():
-    numero = '0' * 1000000
-    start = time()
-    f5(numero)
-    t1 = time() - start
+# def test_timing():
+#     numero = '1234567890' * 100_000
+#     start = time()
+#     f52(numero)
+#     t1 = time() - start
 
-    start = time()
-    f51(numero)
-    t2 = time() - start
+#     start = time()
+#     f51(numero)
+#     t2 = time() - start
 
-    assert t1 == t2
+#     assert t1 == t2
     
 
 # def test_grande():
