@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/IeUccaQnlQE
+
 ## Problema
 
 https://dojopuzzles.com/problems/jogo-da-vida/

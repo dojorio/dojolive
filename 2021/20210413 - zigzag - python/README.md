@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/IUIEKMNNI8E
+
 # Problema
 
 Dada uma lista de no mínimo 3 inteiros, verifique quantos zig zagues ocorrem nos seus elementos. Um zig zag é definido pela regra: x < y > z ou x > y < z. Por exemplo, na lista:

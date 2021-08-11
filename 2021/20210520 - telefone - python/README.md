@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/RrgWkUXsJ_w
+
 ## Problema
 
 https://dojopuzzles.com/problems/encontre-o-telefone/

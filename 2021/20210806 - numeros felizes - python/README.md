@@ -1,6 +1,6 @@
 ## Em Video
 Voce pode assistir a esta sessão em:
-* https://www.youtube.com/watch?*v=8TILxIHqHEs&t=5395s
+* https://youtu.be/8TILxIHqHEs
 
 ## Problema
 

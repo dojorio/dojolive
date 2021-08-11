@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/sS2B7OMsYbU
+
 ## Problema
 
 Dada uma sequencia de inteiros, mudando apenas um de cada vez, quantas combinações divisíveis por 3 são produzidas
