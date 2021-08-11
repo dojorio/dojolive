@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/p0PyAblzn7s
+
 ## Problema
 
 problem.md

@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/2qlJvaATBOs
+
 ## Problema
 
 Dada uma lista de pessoas e os anos de seus nascimentos e óbitos, escreva um programa para encontrar o ano em que o maior número de pessoas estavam vivas.

@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/8Il2XGzE73o
+
 ## Problema
 
 http://en.wikipedia.org/wiki/Luhn_algorithm
