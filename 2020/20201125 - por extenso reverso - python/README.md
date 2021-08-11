@@ -1,3 +1,8 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/mYfPVdp4ARQ
+* https://youtu.be/qKlsogQ8ytM
+
 ## Problema
 Cheque por extenso, só que ao contrário ;-)
 

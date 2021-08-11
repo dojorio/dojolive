@@ -1,3 +1,6 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/J1CsodLGXn4
 
 ## Problema
 
