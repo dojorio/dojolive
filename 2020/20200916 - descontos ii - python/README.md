@@ -1,6 +1,10 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/cdH5rFkUOpg
+
 # Problema
 
-Crie um programa que retorne melhor valor possível de valor não tributado para uma empresa no simples (ME)com um único sócio.
+Crie um programa que retorne melhor valor possível de valor não tributado para uma empresa no simples (ME) com um único sócio.
 
 As regras de tarifação para pessoa física estão em um outro dojo que realizamos: https://github.com/dojorio/dojolive/blob/master/2020/20200715%20-%20descontos%20-%20python/descontos_test.py
 

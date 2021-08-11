@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/lFJQyDR1oRA
+
 ## Problema
 http://dojopuzzles.com/problemas/exibe/analisando-urls/
 

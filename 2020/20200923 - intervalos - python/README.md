@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/YokMf2ZHb6U
+
 ## Problema
 http://dojopuzzles.com/problemas/exibe/intervalos/
 

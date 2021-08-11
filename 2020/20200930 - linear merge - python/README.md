@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/U6ZLKQbxXr4
+
 ## Problema
 https://github.com/henriquebastos/pacote-desafios-pythonicos/blob/master/12_linear_merge.py
 
