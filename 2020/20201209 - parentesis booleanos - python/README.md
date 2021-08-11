@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/bg1nTI-yERc
+
 ## Problema
 
 Parênteses Booleanos

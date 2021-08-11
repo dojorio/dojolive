@@ -1,3 +1,7 @@
+## Em Video
+Voce pode assistir a esta sessão em:
+* https://youtu.be/rwb5XWq17Tw
+
 ## Problema
 
 Caixa Eletrônico
